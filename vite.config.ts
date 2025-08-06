@@ -8,6 +8,7 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8080,
+    allowedHosts: ["formix-website.onrender.com"], // ✅ Added this line
   },
   plugins: [
     react(),
